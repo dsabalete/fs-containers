@@ -12,6 +12,4 @@ USER node
 
 ENV DEBUG=todo-express-backend:*
 
-EXPOSE 3000
-
 CMD ["npm", "start"]
