@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "node_modules/*",
+    "redis_data/*",
+    "mongo/*"
+  ],
+  "delay": 1000,
+  "verbose": true
+}
