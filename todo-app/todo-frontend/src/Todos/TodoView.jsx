@@ -38,6 +38,7 @@ const TodoView = () => {
     <>
       <h1>Todos</h1>
       <Form createTodo={createTodo} />
+      <br />
       <List todos={todos} deleteTodo={deleteTodo} completeTodo={completeTodo} />
     </>
   )
