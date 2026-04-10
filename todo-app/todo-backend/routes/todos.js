@@ -50,7 +50,8 @@ singleRouter.get('/', async (req, res) => {
 singleRouter.put('/', async (req, res) => {
   const todo = req.todo
   if (!todo) return res.sendStatus(404)
-  todo.done = !todo.done
+  todo.done = req.body.done
+  todo.text = req.body.text
   await todo.save()
   res.send(todo)
 });
